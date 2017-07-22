@@ -11,7 +11,7 @@ O projeto consiste em um serviço REST com WebApi implementado com as seguintes 
 
 #Exemplo de código
 
-Executar pelo console os comandos 'Enable-Migrations' e 'Update-Database' para habilitar o migrations e construir o banco respectivamente, na camada 'Data'.
+Através do package manager console do visual studio e definir o projeto FCamaraDev.Infra.Data pra e executar o comando  'Update-Database'.
 
 No construtor do contexto informar a ConnectionString:
  public FCamaraContext()
