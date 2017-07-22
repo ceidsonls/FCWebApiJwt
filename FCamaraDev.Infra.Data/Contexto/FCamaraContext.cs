@@ -9,10 +9,8 @@ namespace FCamaraDev.Infra.Data.Contexto
 {
     public class FCamaraContext : DbContext
     {
-        public FCamaraContext()
-            : base("FCamaraContext")
+        public FCamaraContext() : base("FCamaraContext")
         {
-
         }
 
         public DbSet<Usuario> Usuarios { get; set; }
