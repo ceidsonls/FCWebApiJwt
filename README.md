@@ -1,5 +1,5 @@
 # FCWebApiJwt
-## Projeto 
+# Projeto 
 Utilizando WebApi com o JWT para gerar Token que expira em 1 minuto, obter uma lista de produtos caso esteja autenticado e o token não tenha expirado.
 
 #Sinopse 
@@ -59,6 +59,7 @@ no Controller a action a ser executada, ' [Authorize]' quer dizer que precisa te
         }
 
 #Instalação
+
 Após baixar o projeto deve executar o comando 'Update-Database' no console para criaçao da base de dados.
 executar a aplicação e verificar qual a URL foi gerada para ser utilizada na aplicaçao que irá consumir.
 ex: http://localhost:56085/
@@ -79,7 +80,9 @@ GET
 Headers
 Authorization : bearer 'o valor do token gerado' 
 #Referência 
+
 http://www.developerhandbook.com/c-sharp/create-restful-api-authentication-using-web-api-jwt/
 https://stackoverflow.com/questions/14301524/in-angular-how-to-redirect-with-location-path-as-http-post-success-callback
+
 #Testes
 Foi utilizado o plugin 'Postman' do GoogleChrome
