@@ -37,10 +37,5 @@ namespace FCamaraDev.Infra.Data.Contexto
             modelBuilder.Configurations.Add(new UsuarioConfiguration());
             modelBuilder.Configurations.Add(new ProdutoConfiguration());
         }
-
-        public override int SaveChanges()
-        {
-            return base.SaveChanges();
-        }
     }
 }
