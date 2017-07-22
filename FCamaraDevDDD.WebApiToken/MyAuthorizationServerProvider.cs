@@ -26,7 +26,7 @@ namespace FCamaraDevDDD.WebApiToken
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
             var identity = new ClaimsIdentity(context.Options.AuthenticationType);
-            var usuario = usuarioRepository.ObterTodos().Where(p => p.Login == (context.UserName) && p.Senha.Equals(context.UserName)).FirstOrDefault();
+            var usuario = usuarioRepository.ObterTodos().ToList().Where(p => p.Login.Equals(context.UserName) && p.Senha.Equals(context.Password)).FirstOrDefault();
 
             if (usuario != null)
             {
